@@ -1,0 +1,130 @@
+.main-categories {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.main-categories__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-categories__item {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+}
+
+.main-categories__item:nth-child(2),
+.main-categories__item:nth-child(3) {
+    background-color: #20374F;
+}
+
+
+.main-categories__item-link {
+    color: #20374F;
+    text-decoration: none;
+    display: block;
+    padding: 44px 160px 44px 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.main-categories__item:nth-child(1) .main-categories__item-link {
+    background-image: url("../assets/img/headphones.png");
+    background-size: 220px;
+}
+
+.main-categories__item:nth-child(2) .main-categories__item-link {
+    background-image: url("../assets/img/grill2.png");
+    background-size: 220px 160px;
+}
+
+.main-categories__item:nth-child(3) .main-categories__item-link {
+    background-image: url("../assets/img/fan2.png");
+    background-size: 220px;
+}
+
+.main-categories__item:nth-child(4) .main-categories__item-link {
+    background-image: url("../assets/img/washer.png");
+    background-size: 124px 160px;
+}
+
+.main-categories__item-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.main-categories__item-button {
+    display: block;
+    width: fit-content;
+    background: #FE6B12;
+    color: #FFFFFF;
+}
+
+.main-categories__item:nth-child(2) .main-categories__item-link,
+.main-categories__item:nth-child(3) .main-categories__item-link {
+    color: #FFFFFF;
+}
+
+
+.main-categories__item-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1300px) {
+    .main-categories {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-categories__list {
+        width: 1280px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 32px 16px;
+    }
+
+    .main-categories__item-title {
+        font-size: 36px;
+    }
+
+    .main-categories__item {
+        margin-bottom: 0;
+    }
+
+    .main-categories__item:nth-child(1) {
+        width: calc(40% - 8px);
+    }
+
+    .main-categories__item:nth-child(2) {
+        width: calc(60% - 8px);
+    }
+
+    .main-categories__item:nth-child(3) {
+        width: calc(60% - 8px);
+    }
+
+    .main-categories__item:nth-child(4) {
+        width: calc(40% - 8px);
+    }
+
+    .main-categories__item:nth-child(2) .main-categories__item-link {
+        background-image: url("../assets/img/grill.png");
+        background-size: 415px 244px;
+    }
+
+    .main-categories__item:nth-child(3) .main-categories__item-link {
+        background-image: url("../assets/img/fan.png");
+        background-size: 422px 258px;
+    }
+}
