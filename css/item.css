@@ -18,6 +18,10 @@
     height: auto;
 }
 
+.item__img-container {
+    padding: 0 17%;
+}
+
 .item__discount {
     display: block;
     width: fit-content;
